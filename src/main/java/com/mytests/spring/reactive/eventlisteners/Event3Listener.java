@@ -17,9 +17,10 @@ public class Event3Listener {
 
      @EventListener(Event3.class)
      public List<Event4> handleEvent3(Event3 event3){
+         System.out.println("event3 with count==" + event3.getCount());
          List<Event4> event4s = new ArrayList<>();
-         for (int i = 0; (i <= event3.getCount())||(i <= 1000); i++ ) {
-            event4s.add(new Event4("event4_"+i));
+         for (int i = 0; (i <= event3.getCount()) && (i <= 1000); i++) {
+             event4s.add(new Event4("event4_" + i));
          }
          return event4s;
      }

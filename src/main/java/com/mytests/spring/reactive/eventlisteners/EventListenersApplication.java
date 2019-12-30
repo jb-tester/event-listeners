@@ -7,8 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
-import java.util.concurrent.ScheduledExecutorService;
-
 @SpringBootApplication
 public class EventListenersApplication implements CommandLineRunner {
 
@@ -30,5 +28,6 @@ public class EventListenersApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         context.publishEvent(new MyEvent("test message 1"));
+        context.publishEvent(new Event3(3));
     }
 }
