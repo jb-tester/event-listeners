@@ -15,7 +15,7 @@ import java.util.List;
 @Component
 public class Event3Listener {
 
-     @EventListener(Event3.class)
+     @EventListener//(Event3.class)
      public List<Event4> handleEvent3(Event3 event3){
          System.out.println("event3 with count==" + event3.getCount());
          List<Event4> event4s = new ArrayList<>();

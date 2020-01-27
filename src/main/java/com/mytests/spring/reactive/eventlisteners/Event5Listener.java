@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Event5Listener {
 
-    @EventListener(Event5.class)
+    @EventListener//(Event5.class)
     public void handleEvent5(Event5 event5) {
         System.out.println(event5.toString());
     }
