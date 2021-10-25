@@ -20,8 +20,8 @@ public class Event4Listener {
 
     @EventListener//(Event4.class)
     public Flux<Event5> handleEvent4(Event4 event4) {
-        event5s.add(new Event5("event5 from " + event4.getS()));
-        System.out.println(event4.getS());
+        event5s.add(new Event5("event5 from " + event4.s()));
+        System.out.println(event4.s());
 
         return Flux.fromIterable(event5s);
     }

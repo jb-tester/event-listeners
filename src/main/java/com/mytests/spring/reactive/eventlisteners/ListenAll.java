@@ -1,6 +1,9 @@
 package com.mytests.spring.reactive.eventlisteners;
 
+import org.springframework.boot.actuate.audit.AuditEvent;
+import org.springframework.boot.actuate.audit.listener.AuditApplicationEvent;
 import org.springframework.context.event.EventListener;
+import org.springframework.security.authentication.event.AuthenticationSuccessEvent;
 import org.springframework.stereotype.Component;
 
 /**
