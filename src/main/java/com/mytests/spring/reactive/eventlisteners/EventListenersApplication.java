@@ -13,10 +13,18 @@ public class EventListenersApplication implements CommandLineRunner {
     @Autowired
     ApplicationContext context;
     @Bean
-    AListenerBean listenerBean () {
-        return new AListenerBean();
+    MyEventListenerBean listenerBean () {
+        return new MyEventListenerBean();
     }
 
+    @Bean
+    public UtilsRecord utilsRecordBean() {
+        return new UtilsRecord("test");
+    }
+    @Bean
+    public UtilsClass utilsClassBean() {
+        return new UtilsClass("test");
+    }
     @Bean
     AnotherListenerBean anotherListenerBean () {
         return new AnotherListenerBean();

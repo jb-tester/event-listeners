@@ -1,4 +1,4 @@
 package com.mytests.spring.reactive.eventlisteners;
 
-public record MyEvent(String msg) {
+public record MyEvent(String message) {
     }
